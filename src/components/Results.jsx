@@ -25,7 +25,7 @@ export const Results = () => {
                 </div>
             );
         case '/images':
-            return 'Search';
+            return 'SEARCH';
         case '/news':
             return 'Search';
         case '/videos':
