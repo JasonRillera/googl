@@ -29,7 +29,7 @@ export const Results = () => {
         case '/news':
             return 'SEARCH';
         case '/videos':
-            return 'Search';
+            return 'SEARCH';
 
     
         default:
