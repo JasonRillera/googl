@@ -36,7 +36,7 @@ export const Results = () => {
             );
         case '/images':
             return (
-                <div className="flex flex-wrap justify-center items-center">
+                <div className="flex flex-wrap justify-center">
                     {results?.map(({ image, link:{ href, title }, index }) => (
                         <a className="sm:p-3 p-5" href={href} key={index} target="_blank" rel="noreferrer">
                             <img src={image?.src} alt={title} loading="lazy" />
@@ -65,10 +65,10 @@ export const Results = () => {
             );
         case '/videos':
             return (
-                <div className="flex flex-wrap ">
+                <div className="flex flex-wrap justify-center">
                     {results.map((video, index) => (
                         <div key={index} className="p-2">
-                            <ReactPlayer url={video.additional_links?.[0].href} controls width="355px" height='200px' />
+                            {video?.additional_links?.[0]?.href && <ReactPlayer url={video.additional_links?.[0].href} controls width="355px" height='200px' />}
                         </div>
                     ))}
                 </div>
