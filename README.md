@@ -13,4 +13,4 @@ Jason Rillera: https://github.com/JasonRillera
 
 ## [Live Demo](https://gogglsearchapp.netlify.app/)
 
-![Googl Images](.public/searchmac.png)
+![Googl Images](./public/searchmac.png)
